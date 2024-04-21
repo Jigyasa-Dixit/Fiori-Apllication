@@ -1,0 +1,52 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:t="sap.ui.table">
+
+
+    <Table id="idTable" mode="SingleSelectLeft" items="{/suppliers}" itemPress="onItemPressSupp" >
+    <headerToolbar>
+    <Toolbar>
+    <ToolbarSpacer/>
+    <Button icon="sap-icon://filter" tooltip="filter data" press="onFilter"></Button>
+    </Toolbar>
+    </headerToolbar>
+      <columns>
+      <Column>
+      <header>
+      <Label text="Supplier"></Label>
+       </header>
+      </Column>
+
+      <Column>
+      <header>
+      <Label text="City"></Label>
+       </header>
+      </Column>
+
+      <Column minScreenWidth="Tablet">
+      <header>
+      <Label text="Since When"></Label>
+       </header>
+      </Column>
+
+      <Column minScreenWidth="Tablet">
+      <header>
+      <Label text="Contact Person"></Label>
+       </header>
+      </Column>
+      </columns>
+
+      <items>
+      <ColumnListItem type="Navigation">
+      <cells>
+      <Text text="{name}"></Text>
+       <Input value="{city}" showValueHelp="true" valueHelpRequest="onF4Help" ></Input>
+        <Text text="{sinceWhen}"></Text>
+        <VBox>
+          <Text text="{contactPerson}"></Text>
+          <Text text="{contactNo}"></Text>
+        </VBox>
+       
+      </cells>
+      </ColumnListItem>
+      </items>
+    </Table>
+</core:FragmentDefinition>

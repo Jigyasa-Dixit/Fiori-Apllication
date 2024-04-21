@@ -1,0 +1,25 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+
+ <Select items='{/cities}'>
+    <items>
+    <core:Item key="{name}" text="{name}">
+    </core:Item>
+    </items>
+    </Select>
+
+    <!-- to provide both dropdown and input field  -->
+    <ComboBox items="{/cities}">
+     <items>
+    <core:Item key="{name}" text="{name}">
+    </core:Item>
+    </items>
+     </ComboBox>
+
+     <!-- to select multiple input togehter -->
+     <MultiComboBox items="{/cities}">
+     <items>
+    <core:Item key="{name}" text="{name}">
+    </core:Item>
+    </items>
+     </MultiComboBox>
+</core:FragmentDefinition>

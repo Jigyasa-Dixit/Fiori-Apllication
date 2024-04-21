@@ -1,0 +1,44 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m"
+xmlns:f="sap.ui.layout.form"
+          controllerName="com.soyuz.team.it.controller.View2">
+    
+    <Page title="{name} - {type}" showNavButton="true" navButtonPress="onBack" >
+     <content>
+     <ObjectHeader icon="{imageURL}" title="{name}" intro="{healthBenefit}" number="{price}" numberUnit="{currency}"></ObjectHeader>
+    <!-- <Button text="Back" press="onBack">
+    </Button> -->
+   
+    
+    
+   
+    </content> 
+    <footer>
+    <Toolbar>
+   <ToolbarSpacer/>
+   <Button text="Save" press="onSave" type="Accept"></Button>
+   <Button text="Cancel" press="onCancel" type="Reject"></Button>
+    </Toolbar>
+    </footer>
+    <IconTabBar>
+    <items>
+    <IconTabFilter icon="sap-icon://warning" text="More Info">
+    <core:Fragment fragmentName="com.soyuz.team.it.fragment.moreInfo" type="XML"></core:Fragment>
+    </IconTabFilter>
+
+    <IconTabFilter icon="sap-icon://supplier" text="Suppliers">
+     <core:Fragment fragmentName="com.soyuz.team.it.fragment.supplierTab" type="XML"></core:Fragment>
+    </IconTabFilter>
+
+    <IconTabFilter icon="sap-icon://home" text="Cities">
+   
+     <core:Fragment fragmentName="com.soyuz.team.it.fragment.cities" type="XML"></core:Fragment>
+    </IconTabFilter>
+
+    </items>
+
+    </IconTabBar>
+
+    </Page>
+
+    </mvc:View>
+    

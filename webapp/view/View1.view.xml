@@ -1,0 +1,64 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m"
+          controllerName="com.soyuz.team.it.controller.View1">
+   
+    <Page title="View 1">
+  
+     <headerContent> 
+     <!-- showing content on right side of the screen -->
+    <Button icon="sap-icon://action" press="onNavigate"></Button>
+    </headerContent>
+   <content>
+   <SearchField id="idSearch" search="onSearch" liveChange="onSearch" >
+   </SearchField>
+
+    <List id="myList" items="{/fruits}"  selectionChange= "onItemSelect" mode="MultiSelect" delete="onItemDelete">
+    <headerToolbar>
+    <Toolbar>
+    <ToolbarSpacer/>
+    <Button icon="sap-icon://delete" press="onItemsDelete" tooltip="Delete Selected Items"></Button>
+    </Toolbar>
+    </headerToolbar>
+         <items>
+               <ObjectListItem   title="{name}" intro="{type}" number="{price}" numberUnit="{currency}" icon="{imageURL}">
+              <firstStatus>
+              <ObjectStatus text="{status}" state="{path:'status', formatter:'.formatter.getStatus'}"></ObjectStatus>
+              </firstStatus>
+               </ObjectListItem>
+         </items>
+           </List>
+    
+   </content>
+ </Page>
+ </mvc:View>
+       <!-- <DisplayListItem label="Apple" value="The best antibiotic in the world">
+    </DisplayListItem>
+    <StandardListItem title="Litchi" description="Good Source of Vitamin" icon="https://5.imimg.com/data5/IP/BO/MY-40565349/litchi-fruit.jpg"> 
+    </StandardListItem>
+    <InputListItem>
+    <HBox>
+    <Text text="Which fruit is good for skin"></Text>
+    <Input width="60%"></Input>
+    </HBox>
+    </InputListItem>
+    <CustomListItem>
+    <HBox>
+     <Text  class="sapUiTinyMargin" text="Do you want cash on delivery"></Text>
+     <Switch></Switch>
+    </HBox>
+   
+    </CustomListItem>
+    <ObjectListItem title="Avacado" intro="Best Natural Body Scrum" number="500" numberUnit="PC" 
+    icon="https://cdn.britannica.com/72/170772-050-D52BF8C2/Avocado-fruits.jpg">
+    <firstStatus>
+    <ObjectStatus text="Available" state="Success"></ObjectStatus>
+    </firstStatus>
+    <attributes>
+    <ObjectAttribute text="contains natural salt" title="properties"></ObjectAttribute>
+    </attributes>
+    </ObjectListItem>
+    <FeedListItem sender="Mr.Modi" text="Hello there" timestamp="4 April 2024" info="Sample text" icon="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQCyzdroOgXf1JRT-59-ejJoIE0a9KVvyVwXUrA5xytU8gCuncLXYXL3DO2b1_-YnaUWD0lgEsd3ddXvZg"> 
+    </FeedListItem>
+    <ActionListItem text="Order Now!" press="onPressAction">
+    </ActionListItem> -->
+      
+       <!-- <Button text="Navigate" press="onNavigate"></Button> -->

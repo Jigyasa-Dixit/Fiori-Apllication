@@ -1,0 +1,7 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" 
+            controllerName="com.soyuz.team.it.controller.Empty">
+            <Page title="Empty View">
+            <Image src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTc9S3Tn9GWapm0lHmzpG6CO2Hd4vjiktcKyw1GFzY2dPyDuCVMfImTcXc-guCUuEyN4KvjPgEWWHy1jLySxgOhlCGCKGXzR8jgI35XptQ">
+            </Image>
+            </Page>
+</mvc:View>
